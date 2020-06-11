@@ -86,15 +86,9 @@ def artificial_codebreaker
         
         if $computer.secret_code.eql?($human.secret_code)
             puts "OOOoooH! you've been outwitted The AI Wins!"
-            # puts "---------------feedback---------------"
-            # p feedback
-            # puts "--------------------------------------"
             stop = true
         else
             puts "not smart enough"
-            # puts "---------------feedback---------------"
-            # p feedback
-            # puts "--------------------------------------"
             stop = false
             puts "Common AI just #{11-tries} guess#{"es" unless (11-tries) ===  1} left" unless (11-tries).eql?(0)
         end
